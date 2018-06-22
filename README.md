@@ -58,6 +58,7 @@ As this project runs, it uses the file response.json in the project directory to
 https://www.coinbase.com/api/v2/prices/BTC-USD/historic?period=year
 
 By default this code start a server on localhost as host and 8080 as port, but if you want to change it, edit the code part where http server is being setup. Make the host as 0.0.0.0 to access the APIs publicly
+ARIMA model from cloudera spark timeseries library has been used. One can change model-parameters in the code to optimise the model further.
 
 Once you have done above changes, you can run the the code with following command in project directory
 ```
@@ -84,14 +85,14 @@ http://host:8080/weekly?week=22&year=2018
 Change the week and year in the url to get the data of that particular week
 
 ### API 3
-This API provides the bitcoin price for two custom dates provided by the user ordered by day
+This API provides the bitcoin price between two custom dates provided by the user ordered by day
 
 http://host:8080/custom?start=2018-06-14&end=2018-06-18
 
 Change the start and end to provide the start date and end date between which you want to get the prices
 
 ### API 4
-This API provides the n days moving average for two custom dates provided by the user ordered by day
+This API provides the n days moving average between two custom dates provided by the user ordered by day
 
 http://host:8080/movavg?start=2018-06-10&end=2018-06-18&n=2
 
