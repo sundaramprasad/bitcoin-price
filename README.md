@@ -101,3 +101,9 @@ Change the start day , end day, and n to get the n days moving average between t
 This API provides the next 15 days prediction of the bitcoin prices as predicted by the ARIMA model
 
 http://host:8080/prediction
+
+
+## Built with
+* [Akka http](https://doc.akka.io/docs/akka-http/current/introduction.html) - The web framework used
+* [Cloudera sparkts](https://mvnrepository.com/artifact/com.cloudera.sparkts/sparkts) - The library used for timeseries analysis using ARIMA model
+* [MySQL](https://www.mysql.com/) - The backend DB used to store historical data
