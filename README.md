@@ -5,7 +5,7 @@ This project provides a set of REST APIs to see the historical movement of bitco
 These set of instructions will help you get the project running on you machine and interact with the APIs
 
 ### Setup
-This is a sbt based scala project, so you need to have sbt and scala sdk installed on your system. And java is also required as scala uses jvm. I have used java 8 for this project development. This project uses mysql db as backend. You can use any remote mysql db and change the endpoint in url accordingly
+This is a sbt based scala project, so you need to have sbt and scala sdk installed on your system. And java is also required as scala uses jvm. I have used java 8 for this project development. This project uses MySQL as backend DB. You can use any remote MySQL db and change the endpoint in code accordingly
 
 Use following commands to setup java 8 on your ubuntu system
 ```
