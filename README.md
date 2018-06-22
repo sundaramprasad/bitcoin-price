@@ -57,7 +57,8 @@ As this project runs, it uses the file response.json in the project directory to
 
 https://www.coinbase.com/api/v2/prices/BTC-USD/historic?period=year
 
-By default this code start a server on localhost as host and 8080 as port, but if you want to change it, edit the code part where http server is being setup. Make the host as 0.0.0.0 to access the APIs publicly
+By default this code start a server on localhost as host and 8080 as port, but if you want to change it, edit the code part where http server is being setup. Make the host as 0.0.0.0 to access the APIs publicly. 
+
 ARIMA model from cloudera spark timeseries library has been used. One can change model-parameters in the code to optimise the model further.
 
 Once you have done above changes, you can run the the code with following command in project directory
