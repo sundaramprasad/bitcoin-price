@@ -53,5 +53,14 @@ CREATE TABLE `bitcoin` (
 Once done with all these steps, you are ready with an environment to run this project
 
 ## Running the project
-As this project runs, it uses the file response.json in the project directory to insert the last 365 days bitcoin prices in mysql db. Use the following api from coinbase to get the last 365 days data. Use it in browser to directly download response.json
+As this project runs, it uses the file response.json in the project directory to insert the last 365 days bitcoin prices in mysql db. Use the following api from coinbase to get the latest 365 days data. Use it in browser to directly download response.json and put this file in the project directory
 https://www.coinbase.com/api/v2/prices/BTC-USD/historic?period=year
+
+By default this code start a server on localhost as host and 8080 as port, but if you want to change it, edit the code part where http server is being setup. Make the host as 0.0.0.0 to access the APIs publicly
+
+Once you have done above changes, you can run the the code with following command in project directory
+```
+sbt run
+```
+It will start running the code in your system, mysql db insertion might take a little time, so wait for the logging to say "Insertion over". After all the preprocessing is done, you'll see the message "Server online at http://public-ip:8080/  ....."
+Once server has started, you can access the APIs in your web-browser. API details are given in next section
